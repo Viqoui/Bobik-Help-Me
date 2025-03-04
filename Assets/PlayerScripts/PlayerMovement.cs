@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundPoint;
     private bool isGrounded;
 
+   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,11 +43,16 @@ public class PlayerMovement : MonoBehaviour
         {
             theRB.velocity += new Vector3(0f, jumpForce, 0f);
         }
-        
-        
-        
-        
-        
+        if (moveInput.x > 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1); 
+        }
+        else if (moveInput.x < 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1); 
+        }
+
     }
+     
 
 }
