@@ -5,7 +5,7 @@ using UnityEngine.Audio;
 
 public class PlayerMovement : MonoBehaviour
 {
-    
+    private Item item;
 
     public Rigidbody theRB;
     public float moveSpeed, jumpForce;
@@ -20,8 +20,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-
+        item = GetComponent<Item>();
     }
 
     // Update is called once per frame

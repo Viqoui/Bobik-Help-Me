@@ -5,10 +5,12 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     GameObject item;
+    [SerializeField] GameObject text;
     public bool isPickedUp;
     // Start is called before the first frame update
     void Start()
     {
+        text.SetActive(false);
         isPickedUp = false;
         Debug.Log(isPickedUp);
     }
@@ -27,8 +29,13 @@ public class Item : MonoBehaviour
             isPickedUp = true;
             gameObject.SetActive(false);
             Debug.Log("Wróæ do ziomka!");
+            text.SetActive(true);
         }
     }
+        public void close()
+        {
+            text.SetActive(false);
+        }
 
 
 }
