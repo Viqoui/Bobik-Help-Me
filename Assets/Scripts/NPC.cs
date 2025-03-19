@@ -13,7 +13,13 @@ public class NPC : MonoBehaviour
     public float wordSpeed;
     public bool playerIsClose;
     public GameObject contButton;
+    public Item item;
 
+
+    private void Start()
+    {
+        
+    }
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.E) && playerIsClose) 
@@ -33,6 +39,11 @@ public class NPC : MonoBehaviour
         {
             contButton.SetActive(true);
         }
+
+        if (Input.GetKeyDown(KeyCode.E) && item.isPickedUp == true)
+        {
+            Debug.Log("123");
+        }
     }
 
     public void zeroText()
@@ -40,6 +51,7 @@ public class NPC : MonoBehaviour
         tekstDialogu.text = "";
         index = 0;
         panelDialogu.SetActive(false);
+        
     }
 
     IEnumerator Typing()
@@ -65,6 +77,7 @@ public class NPC : MonoBehaviour
         else
         {
             zeroText();
+            
         }
     }
 
