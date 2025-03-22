@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private Item item;
 
     public Rigidbody theRB;
     public float moveSpeed, jumpForce;
@@ -18,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        item = GetComponent<Item>();
     }
 
     // Update is called once per frame
@@ -39,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = false;
         }
-        if(Input.GetButtonDown("Jump") && isGrounded)
+        if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             theRB.velocity += new Vector3(0f, jumpForce, 0f);
         }
@@ -53,7 +55,9 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(1, 1, 1);
         }
 
+
+
     }
-     
+
 
 }
