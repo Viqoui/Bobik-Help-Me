@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using static System.Net.Mime.MediaTypeNames;
 
 public class NPC : MonoBehaviour
 {
@@ -14,15 +15,18 @@ public class NPC : MonoBehaviour
     public bool playerIsClose;
     public GameObject contButton;
     public Item item;
+    public bool dialogEnd;
+    public GameObject panelOddania;
+    public bool dialogEnd1;
 
-
-    private void Start()
+    void Start()
     {
-        
+        dialogEnd = false;
+        dialogEnd1 = false;
     }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E) && playerIsClose) 
+        if(Input.GetKeyDown(KeyCode.E) && playerIsClose && dialogEnd == false) 
         {
             if(panelDialogu.activeInHierarchy)
             {
@@ -40,12 +44,17 @@ public class NPC : MonoBehaviour
             contButton.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && item.isPickedUp == true)
+        if (Input.GetKeyDown(KeyCode.E) && item.isPickedUp == true && dialogEnd1 == false)
         {
-            Debug.Log("123");
+            panelOddania.SetActive(true);
         }
-    }
 
+    }
+    public void close1()
+    {
+        panelOddania.SetActive(false);
+        dialogEnd1 = true;
+    }
     public void zeroText()
     {
         tekstDialogu.text = "";
@@ -77,7 +86,7 @@ public class NPC : MonoBehaviour
         else
         {
             zeroText();
-            
+            dialogEnd = true;
         }
     }
 
