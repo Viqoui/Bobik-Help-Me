@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using static System.Net.Mime.MediaTypeNames;
-using Unity.VisualScripting;
 
 public class NPC : MonoBehaviour
 {
@@ -19,7 +18,6 @@ public class NPC : MonoBehaviour
     public bool dialogEnd;
     public GameObject panelOddania;
     public bool dialogEnd1;
-    public WinScreen winScreenManager; 
 
     void Start()
     {
@@ -50,12 +48,7 @@ public class NPC : MonoBehaviour
         {
             panelOddania.SetActive(true);
         }
-        
-        if (dialogEnd1 == true)
-        {
-            winScreenManager.Win();
-            Time.timeScale = 0f;
-        }
+
     }
     public void close1()
     {
