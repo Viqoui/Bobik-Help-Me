@@ -1728,6 +1728,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 13512604166347739, guid: 39a19b525e53615458c1a36aebe6a10f,
         type: 3}
+      propertyPath: npc
+      value: 
+      objectReference: {fileID: 876288436}
+    - target: {fileID: 13512604166347739, guid: 39a19b525e53615458c1a36aebe6a10f,
+        type: 3}
       propertyPath: text
       value: 
       objectReference: {fileID: 1704070536}
