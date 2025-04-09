@@ -13,13 +13,14 @@ public class NPC : MonoBehaviour
     public string[] dialog;
     private int index;
     public float wordSpeed;
-    public bool playerIsClose;
+    private bool playerIsClose;
     public GameObject contButton;
     public Item item;
-    public bool dialogEnd;
+    private bool dialogEnd;
     public GameObject panelOddania;
-    public bool dialogEnd1;
-    public WinScreen winScreenManager; 
+    private bool dialogEnd1;
+    public WinScreen winScreenManager;
+    public bool canPickUp;
 
     void Start()
     {
@@ -46,7 +47,7 @@ public class NPC : MonoBehaviour
             contButton.SetActive(true);
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && item.isPickedUp == true && dialogEnd1 == false)
+        if (Input.GetKeyDown(KeyCode.E) && item.isPickedUp == true && dialogEnd1 == false && playerIsClose == true)
         {
             panelOddania.SetActive(true);
         }
@@ -67,7 +68,6 @@ public class NPC : MonoBehaviour
         tekstDialogu.text = "";
         index = 0;
         panelDialogu.SetActive(false);
-        
     }
 
     IEnumerator Typing()
@@ -94,6 +94,7 @@ public class NPC : MonoBehaviour
         {
             zeroText();
             dialogEnd = true;
+            canPickUp = true;
         }
     }
 
