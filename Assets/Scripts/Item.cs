@@ -7,6 +7,7 @@ public class Item : MonoBehaviour
     GameObject item;
     [SerializeField] GameObject text;
     public bool isPickedUp;
+    public NPC npc;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +25,7 @@ public class Item : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) 
+        if (other.CompareTag("Player") && npc.canPickUp == true) 
         {
             isPickedUp = true;
             gameObject.SetActive(false);

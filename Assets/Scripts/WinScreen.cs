@@ -28,4 +28,14 @@ public class WinScreen : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
     }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    public void MeinMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
