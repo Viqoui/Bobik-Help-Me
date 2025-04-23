@@ -13,16 +13,18 @@ public class Krzak : MonoBehaviour
     private bool playerIsClose;
     public bool kotowraca;
     public bool kolejnybool;
+    [SerializeField] KotNPC kotNPC;
     void Start()
     {
         kotowraca = false;
         kolejnybool = false;
+        
     }
 
    
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose && kolejnybool == false)
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose && kolejnybool == false && kotNPC.szukanie == true)
         {
             Panel.SetActive(true);
             Panel2.SetActive(true);
