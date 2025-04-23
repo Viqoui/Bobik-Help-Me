@@ -12,7 +12,7 @@ public class wadliwykrzak3 : MonoBehaviour
     public GameObject PanelNIE;
     private bool playerIsClose1;
     [SerializeField] Krzak krzak;
-
+    [SerializeField] KotNPC kot;
     void Start()
     {
 
@@ -21,7 +21,7 @@ public class wadliwykrzak3 : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose1 == true && krzak.kotowraca == false)
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose1 == true && krzak.kotowraca == false && kot.szukanie == true)
         {
             PanelNIE.SetActive(true);
         }
