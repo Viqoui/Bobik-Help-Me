@@ -9,11 +9,15 @@ public class KotNPC : MonoBehaviour
     private bool readyLOL;
     public bool szukanie;
     public bool zakonczone;
+    private bool ol;
     public GameObject dialog;
     public GameObject dialog2;
     public GameObject BOBIK1;
     public GameObject BOBIK2;
     public GameObject Kot3;
+    public GameObject Objective;
+    public GameObject Objective1;
+    public GameObject Objective2;
     [SerializeField] Krzak krzak;
     [SerializeField] wadliwykrzak wk;
     [SerializeField] wadliwykrzak1 wk1;
@@ -25,6 +29,7 @@ public class KotNPC : MonoBehaviour
         readyLOL = true;
         szukanie = false;
         zakonczone = false;
+        ol = true;
     }
 
     // Update is called once per frame
@@ -34,7 +39,7 @@ public class KotNPC : MonoBehaviour
         {
             readyLOL = false;
             BOBIK1.SetActive(true);
-            
+            Objective.SetActive(false); 
         }
         else if (playerIsClose == false)
         {
@@ -43,14 +48,15 @@ public class KotNPC : MonoBehaviour
 
 
 
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose == true && krzak.kotowraca == true)
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose == true && krzak.kotowraca == true && ol == true)
         {
             dialog.SetActive(true);
             krzak.Panel2.SetActive(false);
+            ol = false;
         }
         else if (playerIsClose == false)
         {
-            
+
         } 
     }
 
@@ -91,11 +97,13 @@ public class KotNPC : MonoBehaviour
     {
         BOBIK2.SetActive(false);
         szukanie = true;
+        Objective1.SetActive(true);
     }
     public void close11()
     {
         dialog2.SetActive(false);
         zakonczone = true;
+        Objective2.SetActive(true);
     }
 
 }

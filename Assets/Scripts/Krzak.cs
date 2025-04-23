@@ -30,10 +30,12 @@ public class Krzak : MonoBehaviour
             Panel2.SetActive(true);
             kotowraca = true;
             kolejnybool = true;
+            kotNPC.Objective1.SetActive(false);
         }
         else if (playerIsClose == false)
         {
             Panel.SetActive(false);
+            
         }
     }
 
@@ -60,5 +62,6 @@ public class Krzak : MonoBehaviour
     public void close1()
     {
         Panel.SetActive(false);
+        
     }
 }
