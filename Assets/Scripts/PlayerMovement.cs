@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
         theRB.velocity = new Vector3(moveInput.x * moveSpeed, theRB.velocity.y, moveInput.y * moveSpeed);
 
         RaycastHit hit;
-        if(Physics.Raycast(groundPoint.position, Vector3.down, out hit, .3f, whatIsGround))
+        if(Physics.Raycast(groundPoint.position, Vector3.down, out hit, .1f, whatIsGround))
         {
             isGrounded = true;
         }
