@@ -4414,8 +4414,25 @@ PrefabInstance:
     - target: {fileID: 6734658830452079705, guid: 16707f71f9b4a194399e9555c56a3bad,
         type: 3}
       propertyPath: m_text
-      value: Nic tu nie ma :///
+      value: Nic tu nie ma ://///
       objectReference: {fileID: 0}
+    - target: {fileID: 6734658830452079705, guid: 16707f71f9b4a194399e9555c56a3bad,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: c21d6cb066f6ffc47bc1a4fc14500fff,
+        type: 2}
+    - target: {fileID: 6734658830452079705, guid: 16707f71f9b4a194399e9555c56a3bad,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6734658830452079705, guid: 16707f71f9b4a194399e9555c56a3bad,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6664802094306119860, guid: c21d6cb066f6ffc47bc1a4fc14500fff,
+        type: 2}
     - target: {fileID: 6734658830452079705, guid: 16707f71f9b4a194399e9555c56a3bad,
         type: 3}
       propertyPath: m_VerticalAlignment
@@ -4425,6 +4442,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_HorizontalAlignment
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6734658830452079705, guid: 16707f71f9b4a194399e9555c56a3bad,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8958383260130400483, guid: 16707f71f9b4a194399e9555c56a3bad,
         type: 3}
