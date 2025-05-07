@@ -748,6 +748,12 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 59280952}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &141650088 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8958383260130400483, guid: 16707f71f9b4a194399e9555c56a3bad,
+    type: 3}
+  m_PrefabInstance: {fileID: 676170985}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &191525108
 GameObject:
   m_ObjectHideFlags: 0
@@ -5016,7 +5022,7 @@ MonoBehaviour:
   Text1K: {fileID: 405745068}
   Text2K: {fileID: 512057566}
   Text2B: {fileID: 1017973101}
-  Text3B: {fileID: 0}
+  Text3B: {fileID: 141650088}
   Text3K: {fileID: 1954977537}
   Text4K: {fileID: 806129593}
   OB1: {fileID: 1327421468}
