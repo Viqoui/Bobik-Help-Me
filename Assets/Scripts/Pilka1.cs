@@ -54,5 +54,7 @@ public class Pilka1 : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         roz.SetActive(false);
+        gameObject.SetActive(false);
+
     }
 }

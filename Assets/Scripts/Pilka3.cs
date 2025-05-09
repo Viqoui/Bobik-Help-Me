@@ -21,7 +21,7 @@ public class Pilka3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose == true && pilka1.Pod1 == false && pilka2.Pod2 == false && pilka1.Pod1 == false)
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose == true && pilka1.Pod1 == false && pilka2.Pod2 == false && pilka.Pod == false)
         {
             Obj1.SetActive(false);
             Obj2.SetActive(true);
