@@ -772,7 +772,8 @@ MonoBehaviour:
   m_text: continue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c21d6cb066f6ffc47bc1a4fc14500fff, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 6664802094306119860, guid: c21d6cb066f6ffc47bc1a4fc14500fff,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4555,7 +4556,7 @@ PrefabInstance:
     - target: {fileID: 6734658830452079705, guid: 16707f71f9b4a194399e9555c56a3bad,
         type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7486068300618790476, guid: 16707f71f9b4a194399e9555c56a3bad,
         type: 3}
