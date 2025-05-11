@@ -18,6 +18,7 @@ public class Halka : MonoBehaviour
     public GameObject halka2;
     public GameObject bobik;
     public GameObject Objective;
+    public bool kwiatki;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,24 +28,24 @@ public class Halka : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose == true && pilka.Pod == true)
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose == true && pilka.Pod == true && kwiatki == false)
         { 
             pilka.Obj2.SetActive(false);
             dobre.SetActive(true);
         }
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose == true && pilka1.Pod1 == true)
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose == true && pilka1.Pod1 == true && kwiatki == false)
         {
             pilka.Obj2.SetActive(false);
             zle.SetActive(true);
             StartCoroutine(LOL());
         }
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose == true && pilka2.Pod2 == true)
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose == true && pilka2.Pod2 == true && kwiatki == false)
         {
             pilka.Obj2.SetActive(false);
             zle.SetActive(true);
             StartCoroutine(LOL());
         }
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose == true && pilka3.Pod3 == true)
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose == true && pilka3.Pod3 == true && kwiatki == false)
         {
             pilka.Obj2.SetActive(false);
             zle.SetActive(true);
@@ -100,5 +101,6 @@ public class Halka : MonoBehaviour
     {
         bobik.SetActive(false);
         Objective.SetActive(true);
+        kwiatki = true;
     }
 }
