@@ -14,10 +14,13 @@ public class KotNPC : MonoBehaviour
     public GameObject dialog2;
     public GameObject BOBIK1;
     public GameObject BOBIK2;
+    
     public GameObject Kot3;
     public GameObject Objective;
     public GameObject Objective1;
     public GameObject Objective2;
+    
+
     [SerializeField] Krzak krzak;
     [SerializeField] wadliwykrzak wk;
     [SerializeField] wadliwykrzak1 wk1;
