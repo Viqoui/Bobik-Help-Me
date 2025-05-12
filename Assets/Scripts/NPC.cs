@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using static System.Net.Mime.MediaTypeNames;
+using Unity.VisualScripting;
 
 public class NPC : MonoBehaviour
 {
@@ -11,12 +13,23 @@ public class NPC : MonoBehaviour
     public string[] dialog;
     private int index;
     public float wordSpeed;
-    public bool playerIsClose;
+    private bool playerIsClose;
     public GameObject contButton;
+    public Item item;
+    private bool dialogEnd;
+    public GameObject panelOddania;
+    private bool dialogEnd1;
+    public WinScreen winScreenManager;
+    public bool canPickUp;
 
+    void Start()
+    {
+        dialogEnd = false;
+        dialogEnd1 = false;
+    }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E) && playerIsClose) 
+        if(Input.GetKeyDown(KeyCode.E) && playerIsClose && dialogEnd == false) 
         {
             if(panelDialogu.activeInHierarchy)
             {
@@ -33,8 +46,23 @@ public class NPC : MonoBehaviour
         {
             contButton.SetActive(true);
         }
-    }
 
+        if (Input.GetKeyDown(KeyCode.E) && item.isPickedUp == true && dialogEnd1 == false && playerIsClose == true)
+        {
+            panelOddania.SetActive(true);
+        }
+        
+        if (dialogEnd1 == true)
+        {
+            winScreenManager.Win();
+            Time.timeScale = 0f;
+        }
+    }
+    public void close1()
+    {
+        panelOddania.SetActive(false);
+        dialogEnd1 = true;
+    }
     public void zeroText()
     {
         tekstDialogu.text = "";
@@ -65,6 +93,8 @@ public class NPC : MonoBehaviour
         else
         {
             zeroText();
+            dialogEnd = true;
+            canPickUp = true;
         }
     }
 
