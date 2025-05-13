@@ -1,39 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static UnityEngine.Rendering.DebugUI;
 
-
-public class Ziomeklvl1 : MonoBehaviour
+public class Koniec2lvl : MonoBehaviour
 {
-    public bool playerIsClose;
-    private bool dialogend;
-    public GameObject popo;
-    public KotNPC npc;
+    [SerializeField] GoodCrate gc;
+    bool playerIsClose;
     // Start is called before the first frame update
     void Start()
     {
-        dialogend = true;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (playerIsClose == true && dialogend == true && npc.zakonczone == true)
+        if(gc.koniec == true && playerIsClose == false)
         {
-            SceneManager.LoadScene("2level");
-        }
-        else if (playerIsClose == false)
-        {
-            
+            SceneManager.LoadScene("lvl3");
         }
     }
-
-
-
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -41,7 +28,6 @@ public class Ziomeklvl1 : MonoBehaviour
             playerIsClose = true;
         }
     }
-
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -50,10 +36,4 @@ public class Ziomeklvl1 : MonoBehaviour
         }
     }
 
-    public void close1()
-    {
-        popo.SetActive(false);
-        npc.Objective2.SetActive(false);
-
-    }
 }

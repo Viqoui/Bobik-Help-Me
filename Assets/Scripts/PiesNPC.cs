@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -28,12 +29,14 @@ public class PiesNPC : MonoBehaviour
     [SerializeField] wadliwykrzak1 wk1;
     [SerializeField] wadliwykrzak2 wk2;
     [SerializeField] wadliwykrzak3 wk3;
+    public bool ogrodzenie;
     // Start is called before the first frame update
     void Start()
     {
         readyLOL = true;
         szukanie = false;
         zakonczone = false;
+        ogrodzenie = true;
         ol = true;
     }
 
@@ -44,7 +47,9 @@ public class PiesNPC : MonoBehaviour
         {
             readyLOL = false;
             BOBIK1.SetActive(true);
-            Objective.SetActive(false); 
+            Objective.SetActive(false);
+            ogrodzenie = false;
+
         }
         else if (playerIsClose == false)
         {
