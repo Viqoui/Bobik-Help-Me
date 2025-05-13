@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using static System.Net.Mime.MediaTypeNames;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public class NPC : MonoBehaviour
 {
@@ -19,13 +20,15 @@ public class NPC : MonoBehaviour
     private bool dialogEnd;
     public GameObject panelOddania;
     private bool dialogEnd1;
-    public WinScreen winScreenManager;
+    public GameObject objective;
     public bool canPickUp;
+    
 
     void Start()
     {
         dialogEnd = false;
         dialogEnd1 = false;
+        
     }
     void Update()
     {
@@ -37,15 +40,16 @@ public class NPC : MonoBehaviour
             }
             else
             {
+                objective.SetActive(false);
                 panelDialogu.SetActive(true);
                 StartCoroutine(Typing());
+                
+
+
             }
         }
 
-        if(tekstDialogu.text == dialog[index])
-        {
-            contButton.SetActive(true);
-        }
+
 
         if (Input.GetKeyDown(KeyCode.E) && item.isPickedUp == true && dialogEnd1 == false && playerIsClose == true)
         {
@@ -54,8 +58,7 @@ public class NPC : MonoBehaviour
         
         if (dialogEnd1 == true)
         {
-            winScreenManager.Win();
-            Time.timeScale = 0f;
+            StartCoroutine(lol());
         }
     }
     public void close1()
@@ -82,9 +85,10 @@ public class NPC : MonoBehaviour
     public void NextLine()
     {
 
-        contButton.SetActive(false);
+        
+        
 
-        if(index < dialog.Length - 1) 
+        if (index < dialog.Length - 1) 
         {
             index++;
             tekstDialogu.text = "";
@@ -116,5 +120,11 @@ public class NPC : MonoBehaviour
             playerIsClose = false;
             zeroText();
         }
+    }
+
+    IEnumerator lol()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("1level");
     }
 }

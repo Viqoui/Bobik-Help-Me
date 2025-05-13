@@ -18,6 +18,7 @@ public class Kasjer : MonoBehaviour
     public GameObject Text3B;
     public GameObject Text3K;
     public GameObject Text4K;
+    public GameObject OB;
     public GameObject OB1;
     public GameObject OB2;
     public GameObject OB3;
@@ -35,6 +36,7 @@ public class Kasjer : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose && poczatek)
         {
+            OB.SetActive(false);
             Text1B.SetActive(true);
             poczatek=false;
         }
@@ -118,6 +120,6 @@ public class Kasjer : MonoBehaviour
     }
     public void close7()
     {
-        SceneManager.LoadScene("CutscenkaKoniec3");
+        SceneManager.LoadScene("lvl5");
     }
 }
