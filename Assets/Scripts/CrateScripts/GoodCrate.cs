@@ -14,6 +14,7 @@ public class GoodCrate : MonoBehaviour
     public bool kotowraca;
     public bool kolejnybool;
     [SerializeField] PiesNPC piesNPC;
+    public bool koniec;
     
     void Start()
     {
@@ -28,11 +29,12 @@ public class GoodCrate : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (//playerIsClose == true && kolejnybool == false && piesNPC.szukanie == true &&//
-            other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             Panel.SetActive(true);
             Panel2.SetActive(true);
+            koniec = true;
+            piesNPC.Objective2.SetActive(false);
             //kotowraca = true;
             //kolejnybool = true;
             //piesNPC.Objective1.SetActive(false);
