@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
-
 public class PlayerMovement : MonoBehaviour
 {
     private Item item;
@@ -15,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundPoint;
     private bool isGrounded;
     public AudioManager audioManager;
+
+
     // Start is called before the first frame update
     void Start()
     {
