@@ -15,8 +15,6 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundPoint;
     private bool isGrounded;
     public AudioManager audioManager;
-    
-
     // Start is called before the first frame update
     void Start()
     {
