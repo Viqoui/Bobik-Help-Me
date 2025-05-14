@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static UnityEngine.Rendering.DebugUI;
+
 
 public class Ziomeklvl1 : MonoBehaviour
 {
@@ -19,10 +21,9 @@ public class Ziomeklvl1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose == true && dialogend == true && npc.zakonczone == true)
+        if (playerIsClose == true && dialogend == true && npc.zakonczone == true)
         {
-            popo.SetActive(true);
-            dialogend = false;
+            SceneManager.LoadScene("2level");
         }
         else if (playerIsClose == false)
         {
@@ -53,5 +54,6 @@ public class Ziomeklvl1 : MonoBehaviour
     {
         popo.SetActive(false);
         npc.Objective2.SetActive(false);
+
     }
 }
