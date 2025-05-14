@@ -4718,7 +4718,7 @@ Transform:
   m_GameObject: {fileID: 903740003}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.03, y: 2.85, z: -1.3800001}
+  m_LocalPosition: {x: 5.001, y: 2.386, z: -1.3800001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5013,7 +5013,7 @@ Transform:
   m_GameObject: {fileID: 985668089}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.03, y: 2.85, z: -1.3800001}
+  m_LocalPosition: {x: 5.001, y: 2.386, z: -1.3800001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9904,12 +9904,12 @@ PrefabInstance:
     - target: {fileID: 7945263712165240347, guid: 9d6040c3428da054f90cb878553aa96d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.03
+      value: 5.001
       objectReference: {fileID: 0}
     - target: {fileID: 7945263712165240347, guid: 9d6040c3428da054f90cb878553aa96d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.85
+      value: 2.386
       objectReference: {fileID: 0}
     - target: {fileID: 7945263712165240347, guid: 9d6040c3428da054f90cb878553aa96d,
         type: 3}
@@ -9959,7 +9959,7 @@ PrefabInstance:
     - target: {fileID: 8218895656120963731, guid: 9d6040c3428da054f90cb878553aa96d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.28
+      value: -1.276
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10223,6 +10223,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 02da6924ef876c142a7cf22fba82a5af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: -1853094968961178454, guid: 02da6924ef876c142a7cf22fba82a5af,
         type: 3}
       propertyPath: m_BackGroundColor.a
@@ -10247,6 +10252,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trawa (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 02da6924ef876c142a7cf22fba82a5af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 02da6924ef876c142a7cf22fba82a5af,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -10332,6 +10347,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: 02da6924ef876c142a7cf22fba82a5af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: -1853094968961178454, guid: 02da6924ef876c142a7cf22fba82a5af,
         type: 3}
       propertyPath: m_BackGroundColor.a
@@ -10356,6 +10376,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: trawa
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 02da6924ef876c142a7cf22fba82a5af,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 02da6924ef876c142a7cf22fba82a5af,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
