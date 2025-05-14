@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
-
 public class PlayerMovement : MonoBehaviour
 {
     private Item item;
@@ -14,12 +13,15 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask whatIsGround;
     public Transform groundPoint;
     private bool isGrounded;
+    public AudioManager audioManager;
+    private bool isPlayingWalkSFX;
+    [SerializeField] private AudioSource walkSFX;
 
-   
 
     // Start is called before the first frame update
     void Start()
     {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         item = GetComponent<Item>();
     }
 
@@ -44,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             theRB.velocity += new Vector3(0f, jumpForce, 0f);
+            audioManager.PlaySFX(audioManager.jump);
         }
 
         if (moveInput.x > 0)
@@ -54,13 +57,25 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
-
-
-
-
-
+        //if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
+       // {
+          // audioManager.PlaySFX(audioManager.walk);
+      //  }
+        if ((Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f) && !isPlayingWalkSFX)
+        {
+            walkSFX.Play();
+            isPlayingWalkSFX = true;
+        }
+        else if((Input.GetAxis("Horizontal") == 0 || Input.GetAxis("Vertical") == 0) && isPlayingWalkSFX)
+        {
+            walkSFX.Stop();
+            isPlayingWalkSFX = false;    
+        }
 
     }
 
-
+    //private void Awake()
+   // {
+        //audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+   // }
 }
