@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform groundPoint;
     private bool isGrounded;
     public AudioManager audioManager;
+    private bool isPlayingWalkSFX;
+    [SerializeField] private AudioSource walkSFX;
 
 
     // Start is called before the first frame update
@@ -55,17 +57,20 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
+        //if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
+       // {
+          // audioManager.PlaySFX(audioManager.walk);
+      //  }
+        if ((Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f) && !isPlayingWalkSFX)
         {
-            audioManager.PlaySFX(audioManager.walk);
+            walkSFX.Play();
+            isPlayingWalkSFX = true;
         }
-
-
-
-
-
-
-
+        else if((Input.GetAxis("Horizontal") == 0 || Input.GetAxis("Vertical") == 0) && isPlayingWalkSFX)
+        {
+            walkSFX.Stop();
+            isPlayingWalkSFX = false;    
+        }
 
     }
 
