@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3caedb26051868b48b9fda0989b73ae2
+guid: 27b8c924e4296224b9001d9ba7fbfd63
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "piesio\u0142_0"
+      name: bobik0002_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 0
-        width: 259
-        height: 497
+        x: 48
+        y: 16
+        width: 317
+        height: 262
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c0a5c6a8d14c3644beb85d081ece623
-      internalID: 503036366
+      spriteID: f3ce5aec1acf114479d05847a3e3464a
+      internalID: -1337951005
       vertices: []
       indices: 
       edges: []
@@ -120,7 +120,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 990996f7d0dc7b744ad5db301c617cef
+    spriteID: e1ce188639c4841488f01454eb7b1ab1
     internalID: 0
     vertices: []
     indices: 
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "piesio\u0142_0": 503036366
+      bobik0002_0: -1337951005
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

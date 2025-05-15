@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
-public class NewBehaviourScript1 : MonoBehaviour
+public class SettingsManager : MonoBehaviour
 {
     public Slider masterVol, musicVol, sfxVol;
     public AudioMixer mainAudioMixer;
@@ -25,7 +25,7 @@ public class NewBehaviourScript1 : MonoBehaviour
 
     public void ChangeSFXVolume()
     {
-        mainAudioMixer.SetFloat("SFXVol", sfxVol.value);
+        mainAudioMixer.SetFloat("SFxVol", sfxVol.value);
     }
 
     void Update()

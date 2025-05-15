@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioSource walkSFX;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -71,7 +72,6 @@ public class PlayerMovement : MonoBehaviour
             walkSFX.Stop();
             isPlayingWalkSFX = false;    
         }
-
     }
 
     //private void Awake()

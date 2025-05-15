@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3caedb26051868b48b9fda0989b73ae2
+guid: 2c7bb81cf96a51a4a94297819e7cb301
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "piesio\u0142_0"
+      name: skrzynka_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 0
-        width: 259
-        height: 497
+        x: 8
+        y: 29
+        width: 336
+        height: 513
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c0a5c6a8d14c3644beb85d081ece623
-      internalID: 503036366
+      spriteID: 399e53ee37ababa41bdc8523303d756e
+      internalID: 1580983746
       vertices: []
       indices: 
       edges: []
@@ -120,7 +120,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 990996f7d0dc7b744ad5db301c617cef
+    spriteID: 7457dc9ec75d8e147815c5b39831f8d4
     internalID: 0
     vertices: []
     indices: 
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "piesio\u0142_0": 503036366
+      skrzynka_0: 1580983746
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
