@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 public class SettingsManager : MonoBehaviour
 {
@@ -15,17 +16,20 @@ public class SettingsManager : MonoBehaviour
 
     public void ChangeMasterVolume()
     {
-        mainAudioMixer.SetFloat("MasterVol", masterVol.value);
+        float volume = masterVol.value;
+        mainAudioMixer.SetFloat("MasterVol", Mathf.Log10(volume) * 20);
     }
 
     public void ChangeMusicVolume()
     {
-        mainAudioMixer.SetFloat("MusicVol", musicVol.value);
+        float volume = musicVol.value;
+        mainAudioMixer.SetFloat("MusicVol", Mathf.Log10(volume) * 20);
     }
 
     public void ChangeSFXVolume()
     {
-        mainAudioMixer.SetFloat("SFxVol", sfxVol.value);
+        float volume = sfxVol.value;
+        mainAudioMixer.SetFloat("SFxVol", Mathf.Log10(volume) * 20);
     }
 
     void Update()
