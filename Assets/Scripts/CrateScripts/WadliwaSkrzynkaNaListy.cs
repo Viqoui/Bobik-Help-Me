@@ -7,7 +7,7 @@ using static System.Net.Mime.MediaTypeNames;
 using Unity.VisualScripting;
 using static UnityEditor.Progress;
 
-public class WadliwaSkrzynia : MonoBehaviour
+public class WadliwaSkrzynkaNaListy : MonoBehaviour
 {
 public GameObject PanelNIE;
     private bool playerIsClose1;

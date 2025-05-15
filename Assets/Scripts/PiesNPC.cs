@@ -25,10 +25,10 @@ public class PiesNPC : MonoBehaviour
     public GameObject Objective4;
 
     [SerializeField] SkrzynkaNaListy SkrzyniaNaListy;
-    [SerializeField] wadliwykrzak wk;
-    [SerializeField] wadliwykrzak1 wk1;
-    [SerializeField] wadliwykrzak2 wk2;
-    [SerializeField] wadliwykrzak3 wk3;
+    [SerializeField] WadliwaSkrzynkaNaListy wk;
+    [SerializeField] WadliwaSkrzynkaNaListy wk1;
+    [SerializeField] WadliwaSkrzynkaNaListy wk2;
+    [SerializeField] WadliwaSkrzynkaNaListy wk3;
     public bool ogrodzenie;
     // Start is called before the first frame update
     void Start()
