@@ -48,7 +48,7 @@ public class PiesNPC : MonoBehaviour
             readyLOL = false;
             BOBIK1.SetActive(true);
             Objective.SetActive(false);
-            ogrodzenie = false;
+            
 
         }
         else if (playerIsClose == false)
@@ -63,6 +63,7 @@ public class PiesNPC : MonoBehaviour
             dialog.SetActive(true);
             SkrzyniaNaListy.Panel2.SetActive(false);
             ol = false;
+            ogrodzenie = false;
         }
         else if (playerIsClose == false)
         {
