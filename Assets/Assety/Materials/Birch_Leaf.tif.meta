@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1047e4d4c69374945b2d161e564af4d7
+guid: 779aad7998126754d91f15297ebc6693
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "kioska\u017C_0"
+      name: Birch_Leaf_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 303
-        height: 665
+        x: 19
+        y: 3
+        width: 90
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40621dcdbaaa6224383fb24f24bcaa7d
-      internalID: -1666953070
+      spriteID: c6686e95e956efd40b397f534e1257ec
+      internalID: 1079669670
       vertices: []
       indices: 
       edges: []
@@ -120,7 +120,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 39af7e3271b8e7f459a543a691c63885
+    spriteID: 1945bfa0f82f48c40909117f56a19d7f
     internalID: 0
     vertices: []
     indices: 
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "kioska\u017C_0": -1666953070
+      Birch_Leaf_0: 1079669670
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
