@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1047e4d4c69374945b2d161e564af4d7
+guid: 8f7771e6639a0854d82c48507a18d79e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "kioska\u017C_0"
+      name: kosz_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 303
-        height: 665
+        x: 3
+        y: 20
+        width: 375
+        height: 407
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40621dcdbaaa6224383fb24f24bcaa7d
-      internalID: -1666953070
+      spriteID: c1376cd4384c06b40a2136f50d758f58
+      internalID: -27477641
       vertices: []
       indices: 
       edges: []
@@ -120,7 +120,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 39af7e3271b8e7f459a543a691c63885
+    spriteID: d7102e02cf94d584391834ec07606430
     internalID: 0
     vertices: []
     indices: 
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "kioska\u017C_0": -1666953070
+      kosz_0: -27477641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

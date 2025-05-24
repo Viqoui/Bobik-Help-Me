@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1047e4d4c69374945b2d161e564af4d7
+guid: 0417042d2c28f754e8262543f8d56cb2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "kioska\u017C_0"
+      name: dfghjiloegrhifo_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 303
-        height: 665
+        width: 364
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40621dcdbaaa6224383fb24f24bcaa7d
-      internalID: -1666953070
+      spriteID: 0a24fc28df49dc546a43ce0c15d45d90
+      internalID: 2033585474
       vertices: []
       indices: 
       edges: []
@@ -120,7 +120,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 39af7e3271b8e7f459a543a691c63885
+    spriteID: e66346940a71eaa459502ea8567cc9b4
     internalID: 0
     vertices: []
     indices: 
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "kioska\u017C_0": -1666953070
+      dfghjiloegrhifo_0: 2033585474
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
