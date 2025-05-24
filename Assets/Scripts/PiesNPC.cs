@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PiesNPC : MonoBehaviour
 {

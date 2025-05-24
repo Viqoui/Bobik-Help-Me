@@ -48,7 +48,7 @@ public class Ziomeklvl1 : MonoBehaviour
 
     public void close1()
     {
-        
+        popo.SetActive(false);
         npc.Objective2.SetActive(false);
 
     }
