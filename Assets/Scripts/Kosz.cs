@@ -22,13 +22,14 @@ public class Kosz : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose == true && kasjer.atm == true && lol)
         {
-            kosz.SetActive(true);
+            
             kasjer.OB3.SetActive(false);
             Objective4.SetActive(true);
+            kosz.SetActive(true);
             znalezione = true;
             lol = false;
         }
-        else if (playerIsClose == false)
+        else if (playerIsClose == false && znalezione == true)
         {
             kosz.SetActive(false);
         }
@@ -54,4 +55,5 @@ public class Kosz : MonoBehaviour
 
         }
     }
+
 }
