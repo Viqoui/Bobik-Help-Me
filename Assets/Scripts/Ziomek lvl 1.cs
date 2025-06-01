@@ -10,7 +10,7 @@ public class Ziomeklvl1 : MonoBehaviour
 {
     public bool playerIsClose;
     private bool dialogend;
-    public GameObject popo;
+    
     public KotNPC npc;
     // Start is called before the first frame update
     void Start()
@@ -21,13 +21,9 @@ public class Ziomeklvl1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerIsClose == true && dialogend == true && npc.zakonczone == true)
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose == true && dialogend == true && npc.zakonczone == true)
         {
             SceneManager.LoadScene("2level");
-        }
-        else if (playerIsClose == false)
-        {
-            
         }
     }
 
@@ -52,7 +48,7 @@ public class Ziomeklvl1 : MonoBehaviour
 
     public void close1()
     {
-        popo.SetActive(false);
+        
         npc.Objective2.SetActive(false);
 
     }
