@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a9a4e84c63962e540a2bf02d9277759e
+guid: 8a943ccffc04b0a4487e674ff5c17160
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -21,7 +21,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -84,12 +84,12 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 1
+    overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "szk\u0142o_0"
+      name: chrupki_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 17
+        x: 15
+        y: 6
         width: 315
-        height: 236
+        height: 273
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff14b51a9b52a264e963509aa40539ae
-      internalID: -854361754
+      spriteID: 0eb5d0d568195274d92dfc42d92481b7
+      internalID: -1994285430
       vertices: []
       indices: 
       edges: []
@@ -120,7 +120,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9d88184f900b6ad4a8971d013089e3fc
+    spriteID: 5dbb6448fae370d459b6289f084d6bd9
     internalID: 0
     vertices: []
     indices: 
@@ -128,7 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "szk\u0142o_0": -854361754
+      chrupki_0: -1994285430
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
