@@ -10,6 +10,7 @@ public class Ziomeklvl1 : MonoBehaviour
 {
     public bool playerIsClose;
     private bool dialogend;
+    public GameObject GameObject;
     
     public KotNPC npc;
     // Start is called before the first frame update
@@ -32,9 +33,10 @@ public class Ziomeklvl1 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && npc.zakonczone == true)
         {
             playerIsClose = true;
+            GameObject.SetActive(true);
         }
     }
 

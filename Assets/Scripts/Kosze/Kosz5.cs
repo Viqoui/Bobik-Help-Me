@@ -7,8 +7,8 @@ public class Kosz5 : MonoBehaviour
 {
     bool playerIsClose;
     public GameObject kosz;
-    
-   
+    public GameObject e;
+
     [SerializeField] Kasjer kasjer;
     bool lol;
     // Start is called before the first frame update

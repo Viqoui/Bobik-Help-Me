@@ -25,6 +25,7 @@ public class Kasjer : MonoBehaviour
     public GameObject KoncowyKasjer;
     [SerializeField] Karma karma;
     [SerializeField] Kosz kosz;
+    public GameObject e;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +39,7 @@ public class Kasjer : MonoBehaviour
         {
             OB.SetActive(false);
             Text1B.SetActive(true);
-            poczatek=false;
+            poczatek = false;
         }
 
 
@@ -67,6 +68,7 @@ public class Kasjer : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = true;
+            e.SetActive(true);
         }
     }
 
@@ -77,6 +79,8 @@ public class Kasjer : MonoBehaviour
             playerIsClose = false;
         }
     }
+
+
 
     public void close()
     {
