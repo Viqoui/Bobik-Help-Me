@@ -7,8 +7,8 @@ public class Kosz2 : MonoBehaviour
 {
     bool playerIsClose;
     public GameObject kosz;
-    
-   
+    public GameObject e;
+
     [SerializeField] Kasjer kasjer;
     bool lol;
     // Start is called before the first frame update
@@ -31,6 +31,7 @@ public class Kosz2 : MonoBehaviour
         else if (playerIsClose == false)
         {
             kosz.SetActive(false);
+            e.SetActive(true);
         }
     }
 
@@ -44,6 +45,10 @@ public class Kosz2 : MonoBehaviour
         {
             playerIsClose = true;
         }
+        if (other.CompareTag("Player") && kasjer.atm == true && lol == true)
+        {
+            playerIsClose = true;
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -51,7 +56,7 @@ public class Kosz2 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = false;
-
+            e.SetActive(false);
         }
     }
 }
