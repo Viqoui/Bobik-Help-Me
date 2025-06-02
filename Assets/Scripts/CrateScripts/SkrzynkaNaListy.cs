@@ -10,6 +10,7 @@ public class SkrzynkaNaListy : MonoBehaviour
 {
   public GameObject Panel;
     public GameObject Panel2;
+    public GameObject e;
     private bool playerIsClose;
     public bool kotowraca;
     public bool kolejnybool;
@@ -31,6 +32,7 @@ public class SkrzynkaNaListy : MonoBehaviour
             kotowraca = true;
             kolejnybool = true;
             piesNPC.Objective1.SetActive(false);
+            piesNPC.szukanie = false;
         }
         else if (playerIsClose == false)
         {
@@ -44,9 +46,10 @@ public class SkrzynkaNaListy : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && piesNPC.szukanie == true)
         {
             playerIsClose = true;
+            e.SetActive(true);
         }
     }
 
@@ -55,7 +58,8 @@ public class SkrzynkaNaListy : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = false;
-           
+            e.SetActive(false);
+
         }
     }
 

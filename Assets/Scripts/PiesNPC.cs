@@ -24,6 +24,7 @@ public class PiesNPC : MonoBehaviour
     public GameObject Objective2;
     public GameObject Objective3;   
     public GameObject Objective4;
+    public GameObject e;
 
     [SerializeField] SkrzynkaNaListy SkrzyniaNaListy;
     [SerializeField] WadliwaSkrzynkaNaListy wk;
@@ -78,6 +79,7 @@ public class PiesNPC : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = true;
+            e.SetActive(true);
         }
     }
 
@@ -85,7 +87,8 @@ public class PiesNPC : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            playerIsClose = false;         
+            playerIsClose = false;
+            e.SetActive(false);
         }
     }
     public void close1()
