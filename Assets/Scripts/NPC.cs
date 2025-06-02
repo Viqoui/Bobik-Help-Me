@@ -22,7 +22,9 @@ public class NPC : MonoBehaviour
     private bool dialogEnd1;
     public GameObject objective;
     public bool canPickUp;
-    
+    public GameObject e;
+
+
 
     void Start()
     {
@@ -110,6 +112,8 @@ public class NPC : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = true;
+            e.SetActive(true);
+            
         }
     }
 
@@ -119,6 +123,8 @@ public class NPC : MonoBehaviour
         {
             playerIsClose = false;
             zeroText();
+            e.SetActive(false);
+
         }
     }
 

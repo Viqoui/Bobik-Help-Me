@@ -10,6 +10,7 @@ using static UnityEditor.Progress;
 public class WadliwaSkrzynkaNaListy : MonoBehaviour
 {
 public GameObject PanelNIE;
+    public GameObject e;
     private bool playerIsClose1;
     [SerializeField] SkrzynkaNaListy SkrzyniaNalisty;
     [SerializeField] PiesNPC piesNPC;
@@ -37,9 +38,10 @@ public GameObject PanelNIE;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && piesNPC.szukanie == true)
         {
             playerIsClose1 = true;
+            e.SetActive(true);
         }
     }
 
@@ -48,6 +50,7 @@ public GameObject PanelNIE;
         if (other.CompareTag("Player"))
         {
             playerIsClose1 = false;
+            e.SetActive(false);
 
         }
     }

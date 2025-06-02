@@ -10,6 +10,7 @@ using static UnityEditor.Progress;
 public class wadliwykrzak1 : MonoBehaviour
 {
     public GameObject PanelNIE;
+    public GameObject e;
     private bool playerIsClose1;
     [SerializeField] Krzak krzak;
     [SerializeField] KotNPC kot;
@@ -40,6 +41,14 @@ public class wadliwykrzak1 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose1 = true;
+
+        }
+
+
+        if (other.CompareTag("Player") && kot.szukanie == true && krzak.enotworking == false)
+        {
+
+            e.SetActive(true);
         }
     }
 
@@ -48,6 +57,7 @@ public class wadliwykrzak1 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose1 = false;
+            e.SetActive(false);
 
         }
     }

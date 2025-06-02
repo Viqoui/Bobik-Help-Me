@@ -29,13 +29,14 @@ public class KotNPC : MonoBehaviour
     [SerializeField] wadliwykrzak1 wk1;
     [SerializeField] wadliwykrzak2 wk2;
     [SerializeField] wadliwykrzak3 wk3;
+    public GameObject e;
     // Start is called before the first frame update
     void Start()
     {
         readyLOL = true;
-        szukanie = false;
         zakonczone = false;
         ol = true;
+        szukanie = false;
     }
 
     // Update is called once per frame
@@ -47,10 +48,6 @@ public class KotNPC : MonoBehaviour
             BOBIK1.SetActive(true);
             Objective.SetActive(false); 
         }
-        else if (playerIsClose == false)
-        {
-            
-        }
 
 
 
@@ -59,10 +56,6 @@ public class KotNPC : MonoBehaviour
             kot2.SetActive(true);
             krzak.Panel2.SetActive(false);
             ol = false;
-        }
-        else if (playerIsClose == false)
-        {
-
         } 
     }
 
@@ -72,6 +65,7 @@ public class KotNPC : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = true;
+            e.SetActive(true);
         }
     }
 
@@ -79,7 +73,8 @@ public class KotNPC : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            playerIsClose = false;         
+            playerIsClose = false;
+            e.SetActive(false);
         }
     }
     public void close1()

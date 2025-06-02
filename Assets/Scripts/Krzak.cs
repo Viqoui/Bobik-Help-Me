@@ -9,11 +9,13 @@ using Unity.VisualScripting;
 public class Krzak : MonoBehaviour
 {
     public GameObject Panel;
+    public GameObject e;
     public GameObject Panel2;
     private bool playerIsClose;
     public bool kotowraca;
     public bool kolejnybool;
     [SerializeField] KotNPC kotNPC;
+    public bool enotworking;
     void Start()
     {
         kotowraca = false;
@@ -31,11 +33,11 @@ public class Krzak : MonoBehaviour
             kotowraca = true;
             kolejnybool = true;
             kotNPC.Objective1.SetActive(false);
+            enotworking = true;
         }
         else if (playerIsClose == false)
         {
-            Panel.SetActive(false);
-            
+            Panel.SetActive(false); 
         }
     }
 
@@ -47,6 +49,14 @@ public class Krzak : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = true;
+            
+        }
+
+
+        if (other.CompareTag("Player") && kotNPC.szukanie == true && enotworking == false)
+        {
+
+            e.SetActive(true);
         }
     }
 
@@ -55,7 +65,7 @@ public class Krzak : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = false;
-           
+            e.SetActive(false);
         }
     }
 
