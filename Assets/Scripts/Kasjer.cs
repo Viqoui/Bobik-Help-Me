@@ -77,6 +77,7 @@ public class Kasjer : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = false;
+            e.SetActive(false);
         }
     }
 
