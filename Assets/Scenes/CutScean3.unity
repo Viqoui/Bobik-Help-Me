@@ -131,7 +131,9 @@ GameObject:
   - component: {fileID: 66827764}
   - component: {fileID: 66827763}
   - component: {fileID: 66827765}
+
   - component: {fileID: 66827766}
+
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -218,6 +220,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+
 --- !u!114 &66827766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,6 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5e23a625d5ec2f4bbf7c81c0f24acff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+
 --- !u!1 &186738164
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,7 +592,9 @@ MonoBehaviour:
   button: {fileID: 8300000, guid: 9fa7dfadef0b34a49955930761ed1f73, type: 3}
   walk: {fileID: 0}
   jump: {fileID: 8300000, guid: 456dce510044b364d807c97f606a2409, type: 3}
+
   timer: {fileID: 0}
+
 --- !u!4 &1395424767
 Transform:
   m_ObjectHideFlags: 0
