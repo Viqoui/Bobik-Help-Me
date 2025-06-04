@@ -19,7 +19,7 @@ public class cs4BAD : MonoBehaviour
     IEnumerator Wait()
     {
 
-        yield return new WaitForSeconds(3.1f);
+        yield return new WaitForSeconds(1.6f);
 
 
         SceneManager.LoadSceneAsync("lvl5");
