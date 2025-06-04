@@ -51165,7 +51165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 153002303}
-  remainingTime: 13
+  remainingTime: 151
   audioManager: {fileID: 1300550782}
 --- !u!1 &849825370
 GameObject:
