@@ -51161,11 +51161,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 834911699}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23ae0db9711f7964a9ccdc136fb24492, type: 3}
+  m_Script: {fileID: 11500000, guid: 5dd79c82d441b4a46879975dfb019d03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 153002303}
-  remainingTime: 120
+  remainingTime: 13
+  audioManager: {fileID: 1300550782}
 --- !u!1 &849825370
 GameObject:
   m_ObjectHideFlags: 0
@@ -80981,6 +80982,7 @@ MonoBehaviour:
   button: {fileID: 8300000, guid: 9fa7dfadef0b34a49955930761ed1f73, type: 3}
   walk: {fileID: 8300000, guid: 22794b0880afafc498f213f8d4244301, type: 3}
   jump: {fileID: 8300000, guid: 456dce510044b364d807c97f606a2409, type: 3}
+  timer: {fileID: 8300000, guid: 0bb6f22e6e34e63439f9cb5f6e6e72ab, type: 3}
 --- !u!4 &1300550783
 Transform:
   m_ObjectHideFlags: 0

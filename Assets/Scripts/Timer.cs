@@ -10,6 +10,7 @@ public class Timer : MonoBehaviour
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float remainingTime;
     private Scene scena;
+    public AudioManager audioManager;
 
 
 
@@ -23,11 +24,17 @@ public class Timer : MonoBehaviour
         {
             remainingTime = 0;
             scena = SceneManager.GetActiveScene();
-            SceneManager.LoadSceneAsync(scena.name);
-            timerText.color = Color.red;
+            SceneManager.LoadSceneAsync("cs1BAD");
+            
         }
         int minutes = Mathf.FloorToInt(remainingTime / 60);
         int secounds = Mathf.FloorToInt(remainingTime % 60);
         timerText.text = string.Format("{0:00}:{1:00}", minutes, secounds);
+        
+        if (remainingTime < 10)
+        {
+            audioManager.PlaySFX(audioManager.timer);
+            timerText.color = Color.red;
+        }
     }
 }
