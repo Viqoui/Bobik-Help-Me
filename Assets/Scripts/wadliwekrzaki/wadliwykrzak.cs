@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using static System.Net.Mime.MediaTypeNames;
 using Unity.VisualScripting;
-using static UnityEditor.Progress;
+
 
 public class wadliwykrzak : MonoBehaviour
 {
