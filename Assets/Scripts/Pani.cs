@@ -72,7 +72,7 @@ public class Pani : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         zle.SetActive(false);
-        SceneManager.LoadScene("GameOver5lvl");
+        SceneManager.LoadScene("cs4BAD");
 
     }
     IEnumerator czk()

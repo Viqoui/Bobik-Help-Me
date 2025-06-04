@@ -125,6 +125,6 @@ public class Kasjer : MonoBehaviour
     }
     public void close7()
     {
-        SceneManager.LoadScene("lvl5");
+        SceneManager.LoadScene("CutScean4");
     }
 }

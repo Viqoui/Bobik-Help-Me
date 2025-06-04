@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class cs3 : MonoBehaviour
+public class cs32BAD : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(Wait());
@@ -14,12 +13,12 @@ public class cs3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     IEnumerator Wait()
     {
 
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(1.7f);
 
 
         SceneManager.LoadSceneAsync("lvl3");

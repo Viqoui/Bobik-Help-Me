@@ -22,7 +22,7 @@ public class Wracajka : MonoBehaviour
         }
         if(playerIsClose == true)
         {
-            SceneManager.LoadScene("lvl3");
+            SceneManager.LoadScene("CutScean3");
         }
     }
     private void OnTriggerEnter(Collider other)
