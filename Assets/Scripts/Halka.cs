@@ -18,6 +18,7 @@ public class Halka : MonoBehaviour
     public GameObject halka2;
     public GameObject bobik;
     public GameObject Objective;
+    public GameObject e;
     public bool kwiatki;
     // Start is called before the first frame update
     void Start()
@@ -58,14 +59,17 @@ public class Halka : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = true;
+            e.SetActive(true);
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
+    
         if (other.CompareTag("Player"))
         {
             playerIsClose = false;
+            e.SetActive(false);
 
         }
     }

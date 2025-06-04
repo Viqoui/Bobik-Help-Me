@@ -8,10 +8,12 @@ public class Kwiat2 : MonoBehaviour
     public GameObject Obj2;
     [SerializeField] Halka halka;
     public GameObject roz;
+    public GameObject e;
     public bool Pod2;
     [SerializeField] Kwiat kwiat;
     [SerializeField] Kwiat1 kwiat1;
     [SerializeField] Kwiat3 kwiat3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,9 +38,10 @@ public class Kwiat2 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && halka.kwiatki)
         {
             playerIsClose = true;
+            e.SetActive(true);
         }
     }
 
