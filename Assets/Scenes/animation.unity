@@ -655,6 +655,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2637352427528646741, guid: 9d6040c3428da054f90cb878553aa96d,
         type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1985458975}
+    - target: {fileID: 2637352427528646741, guid: 9d6040c3428da054f90cb878553aa96d,
+        type: 3}
       propertyPath: walkSFX
       value: 
       objectReference: {fileID: 1985458977}
