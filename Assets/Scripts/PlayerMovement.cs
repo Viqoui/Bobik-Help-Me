@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isPlayingWalkSFX;
     [SerializeField] private AudioSource walkSFX;
 
+    [SerializeField] private Animator anim;
+
 
 
     // Start is called before the first frame update
@@ -31,12 +33,12 @@ public class PlayerMovement : MonoBehaviour
     {
         moveInput.x = Input.GetAxis("Horizontal");
         moveInput.y = Input.GetAxis("Vertical");
-        
+
 
         theRB.velocity = new Vector3(moveInput.x * moveSpeed, theRB.velocity.y, moveInput.y * moveSpeed);
 
         RaycastHit hit;
-        if(Physics.Raycast(groundPoint.position, Vector3.down, out hit, .1f, whatIsGround))
+        if (Physics.Raycast(groundPoint.position, Vector3.down, out hit, .1f, whatIsGround))
         {
             isGrounded = true;
         }
@@ -44,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = false;
         }
-        if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             theRB.velocity += new Vector3(0f, jumpForce, 0f);
             audioManager.PlaySFX(audioManager.jump);
@@ -59,18 +61,27 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(1, 1, 1);
         }
         //if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
-       // {
-          // audioManager.PlaySFX(audioManager.walk);
-      //  }
+        // {
+        // audioManager.PlaySFX(audioManager.walk);
+        //  }
         if ((Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f) && !isPlayingWalkSFX)
         {
             walkSFX.Play();
             isPlayingWalkSFX = true;
         }
-        else if((Input.GetAxis("Horizontal") == 0 || Input.GetAxis("Vertical") == 0) && isPlayingWalkSFX)
+        else if ((Input.GetAxis("Horizontal") == 0 || Input.GetAxis("Vertical") == 0) && isPlayingWalkSFX)
         {
             walkSFX.Stop();
-            isPlayingWalkSFX = false;    
+            isPlayingWalkSFX = false;
+        }
+
+        if (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f)
+        {
+            anim.SetBool("wlk", true);
+        }
+        else
+        {
+            anim.SetBool("wlk", false);
         }
     }
 
