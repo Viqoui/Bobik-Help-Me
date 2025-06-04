@@ -24,7 +24,7 @@ public class Ziomeklvl1 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose == true && dialogend == true && npc.zakonczone == true)
         {
-            SceneManager.LoadScene("2level");
+            SceneManager.LoadScene("Cutscene2");
         }
     }
 
