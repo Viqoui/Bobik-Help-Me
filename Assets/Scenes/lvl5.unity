@@ -476,6 +476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 72568701}
   - component: {fileID: 72568700}
+  - component: {fileID: 72568702}
   m_Layer: 5
   m_Name: SFXVolume
   m_TagString: Untagged
@@ -568,6 +569,21 @@ RectTransform:
   m_AnchoredPosition: {x: 285, y: -90}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &72568702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72568699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 869dda0f419a229428650bde50156edc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderValue: {fileID: 11400000, guid: 1f85525101cd19f4d90cc2d31b47f7bb, type: 2}
+  sliderTwo: {fileID: 72568700}
+  slider: 3
 --- !u!1 &87848484 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8958383260130400483, guid: 16707f71f9b4a194399e9555c56a3bad,
@@ -5134,6 +5150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1216823581}
   - component: {fileID: 1216823582}
+  - component: {fileID: 1216823583}
   m_Layer: 5
   m_Name: MasterVolume
   m_TagString: Untagged
@@ -5226,6 +5243,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1216823583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216823580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 869dda0f419a229428650bde50156edc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderValue: {fileID: 11400000, guid: 1f85525101cd19f4d90cc2d31b47f7bb, type: 2}
+  sliderTwo: {fileID: 1216823582}
+  slider: 1
 --- !u!1001 &1240919564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6040,6 +6072,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1412874309}
   - component: {fileID: 1412874310}
+  - component: {fileID: 1412874311}
   m_Layer: 5
   m_Name: MusicVolume
   m_TagString: Untagged
@@ -6132,6 +6165,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1412874311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412874308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 869dda0f419a229428650bde50156edc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderValue: {fileID: 11400000, guid: 1f85525101cd19f4d90cc2d31b47f7bb, type: 2}
+  sliderTwo: {fileID: 1412874310}
+  slider: 2
 --- !u!1001 &1455528424
 PrefabInstance:
   m_ObjectHideFlags: 0
