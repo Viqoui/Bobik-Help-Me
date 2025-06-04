@@ -8,6 +8,7 @@ public class Kwiat : MonoBehaviour
     
     public GameObject Obj2;
     public GameObject roz;
+    public GameObject e;
     public bool Pod;
     [SerializeField] Kwiat1 kwiat1;
     [SerializeField] Kwiat2 kwiat2;
@@ -37,9 +38,10 @@ public class Kwiat : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && halka.kwiatki)
         {
             playerIsClose = true;
+            e.SetActive(true);
         }
     }
 

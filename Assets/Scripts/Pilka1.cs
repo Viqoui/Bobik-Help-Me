@@ -8,6 +8,7 @@ public class Pilka1 : MonoBehaviour
     public GameObject Obj1;
     public GameObject Obj2;
     public GameObject roz;
+    public GameObject e;
     [SerializeField] Pilka pilka;
     [SerializeField] Pilka2 pilka2;
     [SerializeField] Pilka3 pilka3;
@@ -36,9 +37,10 @@ public class Pilka1 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && Pod1 == false)
         {
             playerIsClose = true;
+            e.SetActive(true);
         }
     }
 
@@ -47,6 +49,7 @@ public class Pilka1 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = false;
+            e.SetActive(false);
 
         }
     }
