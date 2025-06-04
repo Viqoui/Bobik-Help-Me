@@ -11,7 +11,7 @@ public class SettingsManager : MonoBehaviour
 
     void Start()
     {
- 
+        
     }
 
     public void ChangeMasterVolume()
@@ -23,14 +23,15 @@ public class SettingsManager : MonoBehaviour
     public void ChangeMusicVolume()
     {
         float volume = musicVol.value;
-        mainAudioMixer.SetFloat("MusicVol", Mathf.Log10(volume) * 20);     
+        mainAudioMixer.SetFloat("MusicVol", Mathf.Log10(volume) * 20);
     }
 
     public void ChangeSFXVolume()
     {
         float volume = sfxVol.value;
-        mainAudioMixer.SetFloat("SFxVol", Mathf.Log10(volume) * 20);  
+        mainAudioMixer.SetFloat("SFxVol", Mathf.Log10(volume) * 20);
     }
+
     void Update()
     {
         
