@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Timer : MonoBehaviour
+public class Timer3 : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] float remainingTime;
@@ -24,7 +24,7 @@ public class Timer : MonoBehaviour
         {
             remainingTime = 0;
             scena = SceneManager.GetActiveScene();
-            SceneManager.LoadSceneAsync("cs1BAD");
+            SceneManager.LoadSceneAsync("cs4BAD");
             
         }
         int minutes = Mathf.FloorToInt(remainingTime / 60);

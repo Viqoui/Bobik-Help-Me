@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/lvl3.unity
     guid: 4518e3e0bb0028845981394f102e294e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameOver3lvl.unity
     guid: ba7241384f6a6d940b61403b96802d1c
   - enabled: 1
@@ -35,5 +35,26 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CutScene1.unity
     guid: 9fca1ac40f9e7e94c8c4f6a8f5a4d2a7
+  - enabled: 1
+    path: Assets/Scenes/Cutscene2.unity
+    guid: 8de6597e358145842814dd9f078dcbd6
+  - enabled: 1
+    path: Assets/Scenes/CutScean4.unity
+    guid: 468e2b1fc842e4149876706d5b91f557
+  - enabled: 1
+    path: Assets/Scenes/CutScean3.unity
+    guid: 9ed49adccf8307f4796eb5a892219745
+  - enabled: 1
+    path: Assets/Scenes/cs1BAD.unity
+    guid: 7c640cded67084149acd9a01f06b559b
+  - enabled: 1
+    path: Assets/Scenes/cs2BAD.unity
+    guid: d814b5df6abd52f438fe976599bd63f7
+  - enabled: 1
+    path: Assets/Scenes/cs3BAD.unity
+    guid: 2b3684f101dbdc84c8a80de5a1ecbad2
+  - enabled: 1
+    path: Assets/Scenes/cs4BAD.unity
+    guid: d4639e8cdab8c2f45b36bcfa9fb6bdab
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
