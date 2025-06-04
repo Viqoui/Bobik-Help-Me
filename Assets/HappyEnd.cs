@@ -25,7 +25,7 @@ public class HappyEnd : MonoBehaviour
     IEnumerator Wait()
     {
 
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(5.6f);
 
         theend.SetActive(true);
         
@@ -33,7 +33,7 @@ public class HappyEnd : MonoBehaviour
     IEnumerator Wait1()
     {
 
-        yield return new WaitForSeconds(26f);
+        yield return new WaitForSeconds(24f);
 
         end.SetActive(true);
 

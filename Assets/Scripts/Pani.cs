@@ -16,6 +16,7 @@ public class Pani : MonoBehaviour
     public GameObject dobre2;
     public GameObject dobre3;
     public GameObject zle;
+    public GameObject e;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +58,7 @@ public class Pani : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = true;
+            e.SetActive(true);
         }
     }
 
@@ -65,7 +67,7 @@ public class Pani : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = false;
-
+            e.SetActive(false);
         }
     }
     IEnumerator LOL()
