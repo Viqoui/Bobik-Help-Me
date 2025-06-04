@@ -3,25 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Szkło : MonoBehaviour
+public class cs2 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(Wait());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
 
-    private void OnTriggerEnter(Collider other)
+    }
+    IEnumerator Wait()
     {
-        if (other.CompareTag("Player"))
-        {
-           SceneManager.LoadScene("cs3BAD");
-        }
+
+        yield return new WaitForSeconds(7.8f);
+
+
+        SceneManager.LoadSceneAsync("2level");
     }
 }
