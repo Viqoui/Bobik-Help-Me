@@ -12832,7 +12832,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576934090}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: a4bc862313799a84785f872ba7ab4481, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -59806,7 +59806,7 @@ Transform:
   m_GameObject: {fileID: 1641772917}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 33.7, y: 5.9, z: 14.2}
+  m_LocalPosition: {x: 17.4, y: 5.9, z: 3.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -59829,7 +59829,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1674702966
 RectTransform:
   m_ObjectHideFlags: 0
@@ -61047,7 +61047,7 @@ PrefabInstance:
         type: 3}
       propertyPath: audioManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1155486279}
     - target: {fileID: 2824729730119759554, guid: 9d6040c3428da054f90cb878553aa96d,
         type: 3}
       propertyPath: m_Radius
